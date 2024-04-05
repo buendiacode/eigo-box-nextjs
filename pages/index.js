@@ -1,3 +1,6 @@
+/**2024/04/01 */
+import Main from '../src/index/Main'
+
 export default () => <div>
-	<h1>Eigo Box</h1>
+	<Main/>
 </div>
