@@ -1,10 +1,11 @@
 /**2024/04/05-23:42 */
-import React, {Component} from 'react'
+import React, {useContext} from 'react'
+import Content from './Content'
 
-class Frame extends Component {
-    render() {
-        return
-    }
+export default function Frame(props) {
+    const content = useContext(Content)
+    return <section>
+        {content.name}
+        {/*props.content*/}
+    </section>
 }
-
-export default Frame
