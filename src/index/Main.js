@@ -17,17 +17,22 @@ class Main extends Component {
         this.state = {
             content: "Hello React"
         }
+        this.changeContent = this.changeContent.bind(this)
     }
 
     render() {
         return <main>
             <Head/>
             <Header/>
-            <Content.Provider value={this.context}>
-                <Frame/>
-                <Navigator/>
+            <Content.Provider content={this.state.content}>
+                <Frame content={this.state.content}/>
+                <Navigator content={this.state.content} changeContent={this.changeContent}/>
             </Content.Provider>
         </main>
+    }
+
+    changeContent(newContent) {
+        this.setState({content:newContent})
     }
 }
 export default Main
