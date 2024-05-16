@@ -6,6 +6,5 @@ export default function Frame({content}) {
     //const content = useContext(Content)
     return <section>
         {content}
-        {/*props.content*/}
     </section>
 }

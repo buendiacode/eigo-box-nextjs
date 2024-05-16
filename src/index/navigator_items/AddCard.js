@@ -4,7 +4,7 @@ import React from 'react'
 //import Frame from '../Frame'
 
 export default function AddCard({content, changeContent}) {
-        return <li onClick={() => changeContent("Add Button")}>
-            add
-        </li>
+    return <li onClick={() => changeContent("Add Button")}>
+        add
+    </li>
 }
